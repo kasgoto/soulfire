@@ -8,6 +8,7 @@ import {
 } from "next/font/google"
 import "./globals.css"
 import Header from "./header"
+import Footer from "./footer"
 import Image from "next/image"
 
 const geistSans = Geist({
@@ -56,6 +57,7 @@ export default function RootLayout({ children }) {
       >
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   )
