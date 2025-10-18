@@ -25,7 +25,7 @@ export default function ContactPage() {
       </div> */}
 
       {/* Main Content Section */}
-      <div className='bg-white text-black px-8 py-24 lg:px-32'>
+      <div className='bg-white text-black px-8 py-24 lg:px-32 mt-32'>
         <div className='max-w-5xl mx-auto flex flex-col md:flex-row gap-16 items-center'>
           <Image
             src='/contact.jpg'
