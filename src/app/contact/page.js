@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import staticImage from "/contact.jpg"
+import staticImage from "../../../public/contact.jpg"
 
 export default function ContactPage() {
   return (
