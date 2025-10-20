@@ -12,6 +12,7 @@ export default function Header() {
   const [isMobileMenuClosing, setIsMobileMenuClosing] = useState(false)
   const timeoutRef = useRef(null)
 
+  // adding a dropdown for services tab
   const handleMouseEnter = () => {
     clearTimeout(timeoutRef.current)
     setDropdownOpen(true)
@@ -22,7 +23,7 @@ export default function Header() {
     setIsFadingOut(true)
     timeoutRef.current = setTimeout(() => {
       setDropdownOpen(false)
-    }, 200) // Match this duration with the CSS transition duration
+    }, 200)
   }
 
   const toggleMobileMenu = () => {
@@ -31,7 +32,7 @@ export default function Header() {
       setTimeout(() => {
         setMobileMenuOpen(false)
         setIsMobileMenuClosing(false)
-      }, 300) // Match this with the fade duration
+      }, 300)
     } else {
       setMobileMenuOpen(true)
     }
@@ -43,7 +44,6 @@ export default function Header() {
     }
   }, [])
 
-  // Refactored class string to use white text for the transparent header
   const linkBaseClasses = `
     text-white hover:text-gray-300
     transition-colors duration-200
@@ -54,13 +54,7 @@ export default function Header() {
     hover:after:w-full
   `
 
-  // CustomLink component has been removed, using Link directly.
-
   return (
-    // CHANGES:
-    // 1. Increased gradient intensity to black/90 (from-black/90).
-    // 2. Set a fixed height of h-[150px] for the header.
-    // 3. Changed 'py-4' to 'p-0' and used 'items-end' to align content to the bottom of the new height.
     <header
       className='fixed top-0 left-0 w-full h-[170px] z-50 bg-gradient-to-b from-black/90 via-black/90 to-transparent/0 lg:to-transparent/0 px-8 lg:px-32 p-0 flex items-end justify-between transition-colors duration-300'
       style={{
@@ -68,7 +62,7 @@ export default function Header() {
           "linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 95%)",
       }}
     >
-      {/* Container for logo and desktop nav - uses pb-6 to ensure content sits above the very bottom */}
+      {/* Container for logo and desktop nav */}
       <div className='flex items-center gap-4 h-full pb-6'>
         <Link href='/' className='flex items-center'>
           <Image
@@ -77,7 +71,7 @@ export default function Header() {
             width={100}
             height={120}
             priority
-            className='mr-2 drop-shadow-md'
+            className='mr-2 drop-shadow-xl'
           />
         </Link>
 
@@ -102,7 +96,7 @@ export default function Header() {
             >
               Services
             </button>
-            {/* Dropdown menu - remains white background for readability on hover */}
+            {/* Dropdown menu */}
             {dropdownOpen && (
               <div
                 className={`absolute left-0 top-full mt-2 w-48 bg-white border border-gray-200 rounded shadow-lg z-50 transition-opacity ease-in-out duration-200 ${
@@ -150,25 +144,23 @@ export default function Header() {
         </nav>
       </div>
 
-      {/* Login & Donation for Desktop - also uses pb-6 */}
+      {/* Login & Donation for Desktop */}
       <nav className='hidden lg:flex items-center gap-4 text-lg lg:text-xl h-full pb-6'>
-        <Link
+        {/* <Link
           href='/login'
-          // White button remains visible on dark background
           className='bg-white text-black border border-gray-300 py-2 px-6 rounded-full transition-opacity duration-200 hover:opacity-80'
         >
           Log in
-        </Link>
+        </Link> */}
         <Link
           href='/donation'
-          // Colored button remains visible on dark background
-          className='bg-[#fc4052] text-white py-2 px-6 rounded-full transition-opacity duration-200 hover:opacity-80'
+          className='bg-[#f24932] text-white py-2 px-6 rounded-full transition-opacity duration-200 hover:opacity-80'
         >
           Donation
         </Link>
       </nav>
 
-      {/* Hamburger Menu Button (visible on mobile) */}
+      {/* Hamburger Menu Button */}
       <button
         onClick={toggleMobileMenu}
         // Moved button out of the flow to use absolute positioning so it doesn't break alignment
@@ -200,7 +192,7 @@ export default function Header() {
         </svg>
       </button>
 
-      {/* Mobile Menu (conditionally rendered) */}
+      {/* Mobile Menu */}
       {mobileMenuOpen && (
         <div
           className={`lg:hidden fixed inset-0 w-full h-screen bg-black/95 z-40 flex flex-col items-center justify-center space-y-8 text-2xl transition-opacity ease-in-out duration-300 ${

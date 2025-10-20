@@ -56,7 +56,7 @@ export default function TantricPage() {
         />
         <div className='absolute inset-0 flex items-center justify-center z-10'>
           <h1 className='imperial-title text-[12vw] md:text-[8vw] lg:text-[6vw] text-white text-center leading-tight drop-shadow-[0_8px_8px_rgba(0,0,0,1)]'>
-            Tantric Sessions
+            Tantric Meditations
           </h1>
         </div>
       </div>
@@ -69,12 +69,11 @@ export default function TantricPage() {
             <h2 className='faustina-title text-4xl lg:text-5xl font-normal text-center mb-12'>
               Beyond the Physical
             </h2>
-            <p className='text-2xl md:text-2xl lg:text-2xl xl:text-3xl font-extralight text-center max-w-4xl mx-auto'>
-              Tantric sessions are a sacred ritual designed to dissolve
-              emotional blockages and energetic knots. It is a practice that
-              cultivates deep self-love and a harmonious connection between your
-              body and spirit. This is not merely a physical service, but a
-              journey of profound healing and spiritual connection.
+            <p className='text-2xl md:text-2xl lg:text-2xl xl:text-3xl font-extralight text-center max-w-5xl mx-auto'>
+              It is a practice that cultivates deep self-love and a harmonious
+              connection between your body and spirit. This is not merely a
+              physical service, but a journey of profound healing and spiritual
+              connection.
             </p>
           </FadeInSection>
 
@@ -91,18 +90,18 @@ export default function TantricPage() {
             </div>
             <div className='md:w-1/2 flex flex-col gap-6 text-center md:text-left'>
               <h3 className='faustina-title text-3xl lg:text-4xl font-normal'>
-                What a Session Includes
+                What a Session Include
               </h3>
               <p className='text-xl md:text-2xl lg:text-2xl font-extralight'>
-                Our tantric sessions are a safe and respectful space for couples
-                to explore intimacy on a deeper level. We use guided touch,
-                breathwork, and presence to help you connect with your partner
-                and yourselves in a more profound way.
+                Our tantric meditations are a safe and respectful space for
+                couples to explore intimacy on a deeper level. We use guided
+                touch, breathwork, and presence to help you connect with your
+                partner and yourselves in a more profound way.
               </p>
               <p className='text-xl md:text-2xl lg:text-2xl font-extralight'>
                 Each session is tailored to your unique needs, focusing on
                 communication, trust, and the liberation of energetic flow.
-                It&#39;ss an opportunity to find new levels of connection and
+                It&#39;s an opportunity to find new levels of connection and
                 harmony together.
               </p>
             </div>
@@ -113,28 +112,50 @@ export default function TantricPage() {
             <h3 className='faustina-title text-4xl lg:text-5xl font-normal mb-8'>
               Couples Tantric Session
             </h3>
-            <div className='flex flex-col md:flex-row gap-12 md:gap-24 justify-center'>
-              <div className='flex flex-col gap-4 items-center mb-16'>
-                <h4 className='faustina-title text-3xl font-normal'>Online</h4>
-                <p className='text-4xl md:text-5xl text-gray-600 font-extralight'>
-                  $150
-                </p>
-              </div>
-              <div className='flex flex-col gap-4 items-center'>
+            <div className='flex flex-col md:flex-row gap-4 md:gap-32 justify-center'>
+              <div className='flex flex-col gap-4 items-center md:mb-16'>
                 <h4 className='faustina-title text-3xl font-normal'>
-                  In-Person
+                  Online 1:1
                 </h4>
                 <p className='text-4xl md:text-5xl text-gray-600 font-extralight'>
-                  $225
+                  $35
+                </p>
+              </div>
+              <div className='flex flex-col gap-4 items-center mb-6'>
+                <h4 className='faustina-title text-3xl font-normal'>
+                  Online couples
+                </h4>
+                <p className='text-4xl md:text-5xl text-gray-600 font-extralight'>
+                  $55
                 </p>
               </div>
             </div>
-            <Link
-              href='#' // Replace with your actual booking link
-              className='bg-black text-xl text-white border border-gray-300 py-4 px-10 rounded-full transition-opacity duration-200 hover:opacity-60 max-w-xs text-center mt-12'
-            >
-              Book Now
-            </Link>
+            <div className='flex flex-col md:flex-row gap-4 md:gap-24 justify-center'>
+              <div className='flex flex-col gap-4 items-center md:mb-16'>
+                <h4 className='faustina-title text-3xl font-normal'>
+                  In-Person 1:1
+                </h4>
+                <p className='text-4xl md:text-5xl text-gray-600 font-extralight'>
+                  $75
+                </p>
+              </div>
+              <div className='flex flex-col gap-4 items-center mb-6'>
+                <h4 className='faustina-title text-3xl font-normal'>
+                  In-Person couples
+                </h4>
+                <p className='text-4xl md:text-5xl text-gray-600 font-extralight'>
+                  $135
+                </p>
+              </div>
+            </div>
+            <div className='mt-12 md:mt-4'>
+              <Link
+                href='#' // Replace with your actual booking link
+                className='bg-black text-xl text-white border border-gray-300 py-4 px-10 rounded-full transition-opacity duration-200 hover:opacity-60 max-w-xs text-center mt-12'
+              >
+                Book Now
+              </Link>
+            </div>
           </FadeInSection>
         </div>
       </div>

@@ -42,14 +42,14 @@ export default function AboutPage() {
   return (
     <div className='w-full font-[var(--font-imperial-script)]'>
       {/* Hero Section */}
-      <div className='relative h-[60vh] md:h-[100vh] w-full'>
+      <div className='relative h-[100vh] md:h-[100vh] w-full'>
         <Image
           src='/about_hero.jpg'
           alt='About Soulfire Ceremony illustration'
           fill
           quality={100}
           objectFit='cover'
-          objectPosition='50% 47%'
+          objectPosition='50% 51%'
           sizes='100vw'
           className='absolute inset-0'
           priority
@@ -68,19 +68,18 @@ export default function AboutPage() {
           <FadeInSection className='flex flex-col md:flex-row items-center md:gap-12'>
             <div className='md:w-2/6'>
               <Image
-                src='/logo.png'
+                src='/logotext.png'
                 alt='logo'
-                width={500}
-                height={500}
-                className='w-full h-auto shadow-lg mb-8 md:mb-0 rounded-full'
+                width={400}
+                height={400}
+                className='w-auto h-auto mb-8 md:mb-0 max-h-[400px]'
               />
             </div>
             <div className='md:w-4/6 flex flex-col gap-6 text-center md:text-left'>
               <p className='text-2xl md:text-2xl lg:text-2xl xl:text-3xl font-extralight'>
-                SoulFire Ceremony is the living dance of life itself — with all
-                its impurities, challenges, and beauty. I created it to be a
-                continuous mastery of consciousness, the very foundation of our
-                quality of life.
+                SoulFire Ceremony is the living dance of life itself — the
+                shadow and the light. I created it to be a continuous mastery of
+                consciousness, the very foundation of our quality of life.
               </p>
               <p className='text-2xl md:text-2xl lg:text-2xl xl:text-3xl font-extralight'>
                 This ceremony is a remembrance. It is the art of restoring
@@ -92,25 +91,54 @@ export default function AboutPage() {
           </FadeInSection>
 
           {/* Personal Story Section */}
-          <FadeInSection className='flex flex-col-reverse md:flex-row items-center md:gap-12 mt-16'>
-            <div className='md:w-4/6 flex flex-col gap-6 text-center md:text-left'>
+          <FadeInSection className='flex flex-col items-center md:gap-12 mt-16'>
+            <div className='flex flex-col gap-6 text-center md:text-left'>
               <p className='text-2xl md:text-2xl lg:text-2xl xl:text-3xl font-extralight'>
-                In my early twenties, I crossed paths with Kundalini Yoga. After
-                the class, I felt an unmistakable truth: I had come home – to my
-                eternal flame.
+                A little about me:
               </p>
               <p className='text-2xl md:text-2xl lg:text-2xl xl:text-3xl font-extralight'>
-                My humble service is to guide you back to that flame – your
-                home.
+                I&#39;d like to humbly introduce myself and tell my story in a
+                few words. I have an intense desire for learning, knowing and
+                exploring this world, embracing the unknown and freedom that
+                comes with it. This feeling of liberation when on top of a
+                mountain or when standing in front of a pyramid. Something
+                bigger than oneself is what drives me. At an early age, I
+                started traveling the world, graduated with a business degree,
+                moved to the United States, and began my journey of spiritual
+                enlightenment. I&#39;m grateful to walk this path of light. I
+                know what it means to wander searching for truth, yourself and
+                higher purpose. Many years ago, I stepped into a room full of
+                light and kept coming back. Today, I carry this torch of light
+                and share it with anyone who is looking for it.
+              </p>
+              <p className='text-2xl md:text-2xl lg:text-2xl xl:text-3xl font-extralight'>
+                For the past nine years, I have practiced Kundalini Yoga, and
+                now I am honored to teach it. I&#39;ve always valued a personal
+                connection to a student, since I believe heart-to-heart
+                connection is the most effective way of passing knowledge. I
+                also enjoy teaching in groups, as there is a great power in
+                coming together.
+              </p>
+              <p className='text-2xl md:text-2xl lg:text-2xl xl:text-3xl font-extralight'>
+                For those that come in couples, I have a special offering - a
+                journey of merging in love and connection. Couples tantric
+                meditations are designed to meet one another beyond form,
+                uniting you at a soul level.
+              </p>
+              <p className='text-2xl md:text-2xl lg:text-2xl xl:text-3xl font-extralight'>
+                With deep gratitude, I offer this from my heart to yours.
+              </p>
+              <p className='text-2xl md:text-2xl lg:text-2xl xl:text-3xl font-extralight'>
+                -Albina
               </p>
             </div>
-            <div className='md:w-2/6'>
+            <div className='mt-6'>
               <Image
                 src='/about_flame.jpeg'
                 alt='A hand holding a flame'
                 width={500}
                 height={500}
-                className='w-full h-auto rounded-lg shadow-lg mb-8 md:mb-0'
+                className='w-full h-auto rounded-lg shadow-lg mb-2 md:mb-0'
               />
             </div>
           </FadeInSection>

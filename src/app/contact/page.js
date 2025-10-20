@@ -4,27 +4,6 @@ import Link from "next/link"
 export default function ContactPage() {
   return (
     <div className='w-full font-[var(--font-imperial-script)]'>
-      {/* Hero Section */}
-      {/* <div className='relative h-[60vh] md:h-[80vh] w-full'>
-        <Image
-          src='/contact-hero.jpg'
-          alt='Contact Us'
-          fill
-          quality={100}
-          objectFit='cover'
-          objectPosition='50% 25%'
-          sizes='100vw'
-          className='absolute inset-0'
-          priority
-        />
-        <div className='absolute inset-0 flex items-center justify-center z-10'>
-          <h1 className='imperial-title text-[12vw] md:text-[8vw] lg:text-[6vw] text-white text-center leading-tight drop-shadow-[0_8px_8px_rgba(0,0,0,1)]'>
-            Get in Touch
-          </h1>
-        </div>
-      </div> */}
-
-      {/* Main Content Section */}
       <div className='bg-white text-black px-8 py-24 lg:px-32 mt-32'>
         <div className='max-w-5xl mx-auto flex flex-col md:flex-row gap-16 items-center'>
           <Image
@@ -44,7 +23,7 @@ export default function ContactPage() {
             </p>
 
             <div className='flex flex-col gap-8 mt-4'>
-              {/* Instagram Link with text and icon */}
+              {/* Instagram Link */}
               <a
                 href='https://www.instagram.com/soulfireceremony'
                 aria-label='Instagram'
@@ -64,7 +43,7 @@ export default function ContactPage() {
                 <span>soulfireceremony</span>
               </a>
 
-              {/* Facebook Link with text and icon */}
+              {/* Facebook Link */}
               <a
                 href='https://www.facebook.com/soulfireceremony'
                 aria-label='Facebook'
@@ -82,7 +61,7 @@ export default function ContactPage() {
                 <span>Soulfire Ceremony</span>
               </a>
 
-              {/* Email Link with text and icon */}
+              {/* Email Link */}
               <a
                 href='mailto:soulfireceremony@gmail.com'
                 aria-label='Email'

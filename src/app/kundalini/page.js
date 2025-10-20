@@ -42,14 +42,14 @@ export default function KundaliniPage() {
   return (
     <div className='w-full font-[var(--font-imperial-script)]'>
       {/* Hero Section */}
-      <div className='relative h-[60vh] md:h-[90vh] w-full'>
+      <div className='relative h-[60vh] md:h-[100vh] w-full'>
         <Image
-          src='/kundalini.jpg'
+          src='/kundalini_hero.jpg'
           alt='Kundalini awakening'
           fill
           quality={100}
           objectFit='cover'
-          objectPosition='50% 25%'
+          objectPosition='50% 47%'
           sizes='100vw'
           className='absolute inset-0'
           priority
@@ -95,11 +95,11 @@ export default function KundaliniPage() {
                 What a Session Includes
               </h3>
               <p className='text-xl md:text-2xl lg:text-2xl font-extralight'>
-                Our sessions combine dynamic breathwork, mantra, and meditation
-                to create a safe and sacred space for your transformation. Each
-                session is a unique journey designed to help you release
-                blockages, clear energetic pathways, and experience a new level
-                of emotional and spiritual clarity.
+                Our sessions combine movement, dynamic breathwork, mantra, and
+                meditation to create a safe and sacred space for your
+                transformation. Each session is a unique journey designed to
+                help you release blockages, clear energetic pathways, and
+                experience a new level of emotional and spiritual clarity.
               </p>
               <p className='text-xl md:text-2xl lg:text-2xl font-extralight'>
                 Through this practice, you can cultivate a deep sense of peace,
@@ -112,7 +112,7 @@ export default function KundaliniPage() {
           {/* Pricing and CTA Section */}
           <FadeInSection className='mt-16 text-center'>
             <h3 className='faustina-title text-4xl lg:text-5xl font-normal'>
-              Price: <span className='text-gray-600'>$195 per session</span>
+              Price: <span className='text-gray-600'>$75 per 1:1 session</span>
             </h3>
             <p className='text-xl md:text-2xl lg:text-2xl font-extralight mt-4 mb-8'>
               Take the first step toward awakening your true self.

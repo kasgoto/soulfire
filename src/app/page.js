@@ -52,9 +52,8 @@ export default function Home() {
           fill
           quality={100}
           objectFit='cover'
-          objectPosition='50% 25%'
           sizes='100vw'
-          className='absolute inset-0'
+          className='absolute inset-0 object-[47.5%_20%] md:object-[50%_25%]'
           priority
         />
         <div className='absolute inset-0 flex items-center justify-start z-10 px-8 lg:px-32'>
@@ -80,11 +79,10 @@ export default function Home() {
           </h2>
         </FadeInSection>
 
-        {/* Corrected Layout: Centered container with max-width */}
         <FadeInSection className='max-w-7xl mx-auto'>
           <div className='flex flex-col items-center md:flex-row md:items-center md:justify-center md:gap-12'>
             <Image
-              src='/homepageintro.jpeg'
+              src='/homepageintro.jpg'
               alt='introduction image'
               width={400}
               height={200}
@@ -174,10 +172,10 @@ export default function Home() {
                   <strong>Kundalini.</strong>
                 </p>
                 <p className='text-large md:text-large lg:text-large xl:text-xl font-extralight text-center px-4'>
-                  Through dynamic breathwork and meditation, we awaken the
-                  luminous current of Kundalini. This ancient practice ignites
-                  your inner flame, leading you to a profound state of spiritual
-                  awareness and vitality.
+                  Through movement, dynamic breathwork and meditation, we awaken
+                  the luminous current of Kundalini. This ancient practice
+                  ignites your inner flame, leading you to a profound state of
+                  spiritual awareness and vitality.
                 </p>
                 <Link
                   href='/kundalini'
@@ -203,10 +201,10 @@ export default function Home() {
               <div className='flex flex-col gap-8 items-center md:w-3/8'>
                 <p className='text-2xl md:text-2xl lg:text-2xl xl:text-3xl font-extralight text-center'>
                   Find deep healing and connection with our specialized{" "}
-                  <strong>tantric massages.</strong>
+                  <strong>tantric meditations.</strong>
                 </p>
                 <p className='text-large md:text-large lg:text-large xl:text-xl font-extralight text-center px-4'>
-                  More than a physical service, tantric massage is a sacred
+                  More than a physical service, tantric meditation is a sacred
                   ritual to dissolve emotional blockages and energetic knots. It
                   is a practice that cultivates deep self-love and a harmonious
                   connection between your body and spirit.
@@ -223,9 +221,9 @@ export default function Home() {
         </div>
 
         <FadeInSection>
-          <h2 className='faustina-title text-4xl lg:text-5xl text-center mt-30 mb-30 lg:mb-16 font-normal'>
+          <h2 className='faustina-title text-4xl lg:text-5xl text-center mt-30 mb-30 lg:mb-16 font-normal max-w-[1300px] mx-auto'>
             This is a ceremony of remembrance, a humble service to guide you
-            back to who you are—your home.
+            back to who you are — the eternal flame.
           </h2>
         </FadeInSection>
       </div>

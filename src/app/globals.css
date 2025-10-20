@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff; /* White background */
-  --foreground: #171717; /* Dark text */
+  --background: #ffffff;
+  --foreground: #171717;
 }
 
 @theme inline {
@@ -11,13 +11,6 @@
   --font-imperial-script: var(--font-imperial-script);
   --font-lexend: var(--font-lexend);
   --font-gowun-dodum: var(--font-gowun-dodum);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #ffffff; /* Keep white background for dark mode */
-    --foreground: #171717; /* Keep dark text for dark mode */
-  }
 }
 
 body {
@@ -35,9 +28,3 @@ body {
 .faustina-title {
   font-family: var(--font-faustina), Arial, Helvetica, sans-serif;
 }
-
-/* You can also use these variables for specific elements or classes:
-.some-class {
-  font-family: var(--font-charm), var(--font-lexend), sans-serif;
-}
-*/
