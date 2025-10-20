@@ -57,7 +57,6 @@ export default function Home() {
           // height='1400'
           className='absolute inset-0 object-[47.5%_20%] md:object-[50%_25%]'
           placeholder='blur'
-          blurDataURL='data:image/jpeg;base64,...'
           priority
         />
         <div className='absolute inset-0 flex items-center justify-start z-10 px-8 lg:px-32'>

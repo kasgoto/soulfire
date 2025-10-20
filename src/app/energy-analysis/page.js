@@ -54,7 +54,6 @@ export default function EnergyAnalysisPage() {
           objectPosition='50% 25%'
           sizes='100vw'
           placeholder='blur'
-          blurDataURL='data:image/jpeg;base64,...'
           className='absolute inset-0'
           priority
         />

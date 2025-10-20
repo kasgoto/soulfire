@@ -12,7 +12,6 @@ export default function ContactPage() {
             width={800}
             height={800}
             placeholder='blur'
-            blurDataURL='data:image/jpeg;base64,...'
             priority
             className='w-full md:w-7/16 h-auto rounded-lg shadow-lg'
           />
