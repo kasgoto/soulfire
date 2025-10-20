@@ -3,6 +3,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { useState, useEffect, useRef } from "react"
+import staticImage from "/energy_analysis.jpg"
 
 // Reusable component for fade-in effect on scroll
 const FadeInSection = ({ children, className }) => {
@@ -44,8 +45,9 @@ export default function EnergyAnalysisPage() {
       {/* Hero Section */}
       <div className='relative h-[60vh] md:h-[90vh] w-full'>
         <Image
-          src='/energy_analysis.jpg'
+          src={staticImage}
           alt='Spiritual energy analysis'
+          placeholder='blur'
           fill
           quality={100}
           // width={2000}
@@ -53,7 +55,7 @@ export default function EnergyAnalysisPage() {
           objectFit='cover'
           objectPosition='50% 25%'
           sizes='100vw'
-          placeholder='blur'
+          
           className='absolute inset-0'
           priority
         />

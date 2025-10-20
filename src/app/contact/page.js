@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
+import staticImage from "/contact.jpg"
 
 export default function ContactPage() {
   return (
@@ -7,11 +8,11 @@ export default function ContactPage() {
       <div className='bg-white text-black px-8 py-24 lg:px-32 mt-32'>
         <div className='max-w-5xl mx-auto flex flex-col md:flex-row gap-16 items-center'>
           <Image
-            src='/contact.jpg'
+            src={staticImage}
             alt='Contact Us'
+            placeholder='blur'
             width={800}
             height={800}
-            placeholder='blur'
             priority
             className='w-full md:w-7/16 h-auto rounded-lg shadow-lg'
           />

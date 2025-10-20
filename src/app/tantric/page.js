@@ -3,6 +3,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { useState, useEffect, useRef } from "react"
+import staticImage from "/tantic.jpg"
 
 // Reusable component for fade-in effect on scroll
 const FadeInSection = ({ children, className }) => {
@@ -44,8 +45,9 @@ export default function TantricPage() {
       {/* Hero Section */}
       <div className='relative h-[60vh] md:h-[90vh] w-full'>
         <Image
-          src='/tantric.jpg'
+          src={staticImage}
           alt='Tantric massage illustration'
+          placeholder='blur'
           fill
           quality={100}
           objectFit='cover'
@@ -55,7 +57,6 @@ export default function TantricPage() {
           // height={1333}
           className='absolute inset-0'
           priority
-          placeholder='blur'
         />
         <div className='absolute inset-0 flex items-center justify-center z-10'>
           <h1 className='imperial-title text-[12vw] md:text-[8vw] lg:text-[6vw] text-white text-center leading-tight drop-shadow-[0_8px_8px_rgba(0,0,0,1)]'>

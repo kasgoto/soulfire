@@ -3,6 +3,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { useState, useEffect, useRef } from "react"
+import staticImage from "/homepage.jpg"
 
 // Reusable component for fade-in effect on scroll
 const FadeInSection = ({ children, className }) => {
@@ -47,8 +48,9 @@ export default function Home() {
       {/* Hero Section with Background Image */}
       <div className='relative h-[100vh] w-full'>
         <Image
-          src='/homepage.jpg'
+          src={staticImage}
           alt='Background'
+          placeholder='blur'
           fill
           quality={100}
           objectFit='cover'
@@ -56,7 +58,6 @@ export default function Home() {
           // width='2100'
           // height='1400'
           className='absolute inset-0 object-[47.5%_20%] md:object-[50%_25%]'
-          placeholder='blur'
           priority
         />
         <div className='absolute inset-0 flex items-center justify-start z-10 px-8 lg:px-32'>
