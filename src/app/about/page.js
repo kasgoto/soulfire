@@ -52,7 +52,11 @@ export default function AboutPage() {
           objectPosition='50% 51%'
           sizes='100vw'
           className='absolute inset-0'
+          // width={2000}
+          // height={2000}
           priority
+          placeholder='blur'
+          blurDataURL='data:image/jpeg;base64,...'
         />
         <div className='absolute inset-0 flex items-center justify-center z-10'>
           <h1 className='imperial-title text-[12vw] md:text-[8vw] lg:text-[6vw] text-white text-center leading-tight drop-shadow-[0_8px_8px_rgba(0,0,0,1)]'>

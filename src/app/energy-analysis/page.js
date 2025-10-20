@@ -48,9 +48,13 @@ export default function EnergyAnalysisPage() {
           alt='Spiritual energy analysis'
           fill
           quality={100}
+          // width={2000}
+          // height={1802}
           objectFit='cover'
           objectPosition='50% 25%'
           sizes='100vw'
+          placeholder='blur'
+          blurDataURL='data:image/jpeg;base64,...'
           className='absolute inset-0'
           priority
         />

@@ -9,8 +9,11 @@ export default function ContactPage() {
           <Image
             src='/contact.jpg'
             alt='Contact Us'
-            width={400}
+            width={800}
             height={800}
+            placeholder='blur'
+            blurDataURL='data:image/jpeg;base64,...'
+            priority
             className='w-full md:w-7/16 h-auto rounded-lg shadow-lg'
           />
           <div className='w-full md:w-9/16 flex flex-col items-center text-center gap-12'>
