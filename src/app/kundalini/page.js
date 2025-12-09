@@ -4,7 +4,9 @@ import Image from "next/image"
 import Link from "next/link"
 import { useState, useEffect, useRef } from "react"
 import staticImage from "../../../public/kundalini_hero.jpg"
+import { PAYPAL_KUNDALINI_1ON1 } from "../paymentlinks"
 
+const kundaliniLink_1on1 = "https://www.paypal.com/ncp/payment/AH2UE3V6TMRQ4"
 // Reusable component for fade-in effect on scroll
 const FadeInSection = ({ children, className }) => {
   const [isVisible, setVisible] = useState(false)
@@ -122,7 +124,7 @@ export default function KundaliniPage() {
               Take the first step toward awakening your true self.
             </p>
             <Link
-              href='#' // Replace with your actual booking link
+              href={`${PAYPAL_KUNDALINI_1ON1}`}
               className='bg-black text-xl text-white border border-gray-300 py-4 px-10 rounded-full transition-opacity duration-200 hover:opacity-60 max-w-xs text-center'
             >
               Book a Session
