@@ -72,7 +72,7 @@ export default function AboutPage() {
           <FadeInSection className='flex flex-col md:flex-row items-center md:gap-12'>
             <div className='md:w-2/6'>
               <Image
-                src='/logotext.png'
+                src='/logoupdated.png'
                 alt='logo'
                 width={400}
                 height={400}

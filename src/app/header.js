@@ -66,12 +66,12 @@ export default function Header() {
       <div className='flex items-center gap-4 h-full pb-6'>
         <Link href='/' className='flex items-center'>
           <Image
-            src='/logotextwhite.png'
+            src='/logoupdatedbrighter.png'
             alt='Logo'
-            width={100}
+            width={120}
             height={120}
             priority
-            className='mr-2 drop-shadow-xl'
+            className='mr-2 drop-shadow-xl w-[120px]'
           />
         </Link>
 
@@ -154,7 +154,7 @@ export default function Header() {
         </Link> */}
         <Link
           href='/donation'
-          className='bg-[#f24932] text-white py-2 px-6 rounded-full transition-opacity duration-200 hover:opacity-80'
+          className='bg-[#ee423a] text-white py-2 px-6 rounded-full transition-opacity duration-200 hover:opacity-80'
         >
           Donation
         </Link>
