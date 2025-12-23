@@ -62,7 +62,7 @@ export default function Home() {
         />
         <div className='absolute inset-0 flex items-center justify-start z-10 px-8 lg:px-32'>
           <div className='flex items-center w-full'>
-            <h1 className='imperial-title text-[16vw] md:text-[14vw] lg:text-[7vw] text-white text-center  drop-shadow-[0_8px_8px_rgba(0,0,0,1)] md:drop-shadow-[0_12px_14px_rgba(0,0,0,1)] flex-1 lg:pt-[40vh]'>
+            <h1 className='imperial-title text-[16vw] md:text-[14vw] lg:text-[7vw] text-white text-center  drop-shadow-[0_8px_8px_rgba(0,0,0,1)] md:drop-shadow-[0_12px_14px_rgba(0,0,0,1)] flex-1 lg:pt-[51vh]'>
               Become What You Are
             </h1>
             {/* <h1 className='imperial-title text-[16vw] lg:text-[7vw] text-white text-right leading-tight drop-shadow-[0_8px_8px_rgba(0,0,0,1)] flex-1 lg:block hidden'>
@@ -107,7 +107,7 @@ export default function Home() {
                 href='/about'
                 className='bg-black text-xl text-white border border-gray-300 py-2 px-6 rounded-full transition-opacity duration-200 hover:opacity-60 max-w:[200px] text-center self-start mt-4'
               >
-                Learn more
+                Learn More
               </Link>
             </div>
           </div>
@@ -118,7 +118,7 @@ export default function Home() {
       <div className='px-8 pt-6 lg:py-16 md:py-24 lg:px-32 bg-white text-black mx-auto flex flex-col'>
         <FadeInSection>
           <h2 className='faustina-title text-4xl lg:text-5xl text-center mb-10 font-normal'>
-            What I offer
+            What I Offer
           </h2>
           <p className='mb-8 text-2xl md:text-2xl lg:text-2xl xl:text-3xl font-extralight text-center'>
             Through our gentle and profound practices, we offer you a path home.
@@ -183,7 +183,7 @@ export default function Home() {
                   href='/kundalini'
                   className='bg-black text-xl text-white border border-gray-300 py-2 px-6 rounded-full transition-opacity duration-200 hover:opacity-60 max-w-xs text-center'
                 >
-                  Dive in
+                  Dive In
                 </Link>
               </div>
             </div>
@@ -215,7 +215,7 @@ export default function Home() {
                   href='/tantric'
                   className='bg-black text-xl text-white border border-gray-300 py-2 px-6 rounded-full transition-opacity duration-200 hover:opacity-60 max-w-xs text-center'
                 >
-                  Book now
+                  Dive In
                 </Link>
               </div>
             </div>

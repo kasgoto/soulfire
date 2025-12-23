@@ -105,11 +105,11 @@ export default function AboutPage() {
                 few words. I have an intense desire for learning, knowing and
                 exploring this world, embracing the unknown and freedom that
                 comes with it. I am deeply inspired by the feeling of liberation
-                I experience when on top of a mountain or before a pyramid -
-                moments that remind me of something greater than myself and fuel
-                my drive. At an early age, I started traveling the world,
-                graduated with a business degree, moved to the United States,
-                and began my journey of spiritual enlightenment. I&#39;m
+                I experience when standing on top of a mountain or before a
+                pyramid - moments that remind me of something greater than
+                myself and fuel my drive. At an early age, I started traveling
+                the world, graduated with a business degree, moved to the United
+                States, and began my journey of spiritual enlightenment. I&#39;m
                 grateful to walk this path of light. I know what it means to
                 wander searching for truth, yourself and higher purpose. Many
                 years ago, I stepped into a room full of light and kept coming
@@ -118,18 +118,18 @@ export default function AboutPage() {
               </p>
               <p className='text-2xl md:text-2xl lg:text-2xl xl:text-3xl font-extralight'>
                 I am an RYS-200 Certified Instructor with additional training in
-                breathwork and tantric meditation practices. I’ve been devoted
-                to Kundalini yoga for the past nine years, and now I am honored
-                to teach it. I’ve always valued a personal connection to a
-                student, since I believe heart-to-heart connection is the most
+                reiki, breathwork and tantric meditation practices. I’ve been
+                devoted to Kundalini yoga for the past nine years, and now I am
+                honored to teach it. I’ve always valued a personal connection to
+                a student, since I believe heart-to-heart connection is the most
                 effective way of passing knowledge. I also enjoy teaching in
                 groups, as there is a great power in coming together.
               </p>
               <p className='text-2xl md:text-2xl lg:text-2xl xl:text-3xl font-extralight'>
-                For those that come in couples, I have a special offering - a
-                journey of merging in love and connection. Couples tantric
-                meditations are designed to meet one another beyond form,
-                uniting you at a soul level.
+                I offer kundalini and tantric meditations to guide both
+                individual and shared journeys, inviting you to meet yourself
+                and another beyond form, awaken your unique vibration, and
+                harmonize body, mind and spirit.
               </p>
               <p className='text-2xl md:text-2xl lg:text-2xl xl:text-3xl font-extralight'>
                 With deep gratitude, I offer this from my heart to yours.

@@ -4,6 +4,12 @@ import Image from "next/image"
 import Link from "next/link"
 import { useState, useEffect, useRef } from "react"
 import staticImage from "../../../public/energy_analysis.jpg"
+import staticLogoPaypal from "../../../public/paypal_logo.svg"
+import {
+  PAYPAL_ENERGY_ANALYSIS,
+  VENMO_APP_LINK,
+  VENMO_HANDLE,
+} from "../paymentlinks"
 
 // Reusable component for fade-in effect on scroll
 const FadeInSection = ({ children, className }) => {
@@ -40,6 +46,17 @@ const FadeInSection = ({ children, className }) => {
 }
 
 export default function EnergyAnalysisPage() {
+  const [isModalOpen, setIsModalOpen] = useState(false)
+
+  // Close modal when clicking Escape key
+  useEffect(() => {
+    const handleEsc = (e) => {
+      if (e.key === "Escape") setIsModalOpen(false)
+    }
+    window.addEventListener("keydown", handleEsc)
+    return () => window.removeEventListener("keydown", handleEsc)
+  }, [])
+
   return (
     <div className='w-full font-[var(--font-imperial-script)]'>
       {/* Hero Section */}
@@ -50,10 +67,7 @@ export default function EnergyAnalysisPage() {
           placeholder='blur'
           fill
           quality={100}
-          // width={2000}
-          // height={1802}
-          objectFit='cover'
-          objectPosition='50% 25%'
+          style={{ objectFit: "cover", objectPosition: "50% 25%" }}
           sizes='100vw'
           className='absolute inset-0'
           priority
@@ -68,7 +82,7 @@ export default function EnergyAnalysisPage() {
       {/* Main Content Section */}
       <div className='bg-white text-black px-8 py-24 lg:px-32'>
         <div className='max-w-7xl mx-auto flex flex-col gap-16'>
-          {/* What It's For Section */}
+          {/* ... (What is Energy Analysis and How It Works sections remain the same) ... */}
           <FadeInSection>
             <h2 className='faustina-title text-4xl lg:text-5xl font-normal text-center mb-12'>
               What is an Energy Analysis?
@@ -77,43 +91,8 @@ export default function EnergyAnalysisPage() {
               An energy analysis is a personalized, deep dive into your unique
               energetic blueprint. It&apos;s a powerful tool to help you
               identify blockages, understand your energetic patterns, and
-              realign with your true purpose. This analysis is designed to help
-              you harness your most potent forces, creating harmony and clarity
-              in your life.
+              realign with your true purpose.
             </p>
-          </FadeInSection>
-
-          {/* How It's Done Section */}
-          <FadeInSection className='flex flex-col md:flex-row items-center md:gap-12 mt-16'>
-            <div className='md:w-1/4'>
-              <Image
-                src='/energy_analysis_howitworks.jpg'
-                alt='Diagram showing energy flow'
-                width={500}
-                height={500}
-                className='w-full h-auto rounded-lg shadow-lg mb-8 md:mb-0'
-              />
-            </div>
-            <div className='md:w-3/4 flex flex-col gap-6 text-center md:text-left'>
-              <h3 className='faustina-title text-3xl lg:text-4xl font-normal'>
-                How It Works
-              </h3>
-              <p className='text-xl md:text-2xl lg:text-2xl font-extralight'>
-                Energy Analysis is about meeting you where you are. This
-                60-minute session begins with gentle breathing and relaxation,
-                allowing you to settle into your body and arrive in the present
-                moment. From there, I’ll guide you through a few reflective
-                questions to gain insight into the current state of your
-                physical, emotional and mental body. Throughout the session,
-                I’ll use a variety of energy tools and sound healing techniques
-                to help bring your energy field into balance and harmony.
-              </p>
-              <p className='text-xl md:text-2xl lg:text-2xl font-extralight'>
-                Together, we’ll uncover where your energy may be out of
-                alignment and explore the next steps toward restoring balance,
-                clarity and flow.
-              </p>
-            </div>
           </FadeInSection>
 
           {/* Pricing and CTA Section */}
@@ -125,15 +104,103 @@ export default function EnergyAnalysisPage() {
               Take the first step on your journey to understanding yourself on a
               deeper level.
             </p>
-            <Link
-              href='#' // You can replace this with a booking URL
-              className='bg-black text-xl text-white border border-gray-300 py-4 px-10 rounded-full transition-opacity duration-200 hover:opacity-60 max-w-xs text-center'
+
+            {/* Changed Link to Button to trigger Modal */}
+            <button
+              onClick={() => setIsModalOpen(true)}
+              className='inline-block bg-black text-xl text-white border border-gray-300 py-4 px-10 rounded-full transition-opacity duration-200 hover:opacity-60 max-w-xs text-center'
             >
               Get Yours Now
-            </Link>
+            </button>
           </FadeInSection>
         </div>
       </div>
+
+      {/* PAYMENT MODAL */}
+      {isModalOpen && (
+        <div
+          className='fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm'
+          onClick={() => setIsModalOpen(false)} // Close when clicking backdrop
+        >
+          <div
+            className='bg-white rounded-2xl p-8 max-w-md w-full relative shadow-2xl flex flex-col items-center'
+            onClick={(e) => e.stopPropagation()} // Prevent closing when clicking the box
+          >
+            {/* Close Button */}
+            <button
+              onClick={() => setIsModalOpen(false)}
+              className='absolute top-4 right-4 text-gray-400 hover:text-black transition-colors'
+            >
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                width='24'
+                height='24'
+                viewBox='0 0 24 24'
+                fill='none'
+                stroke='currentColor'
+                strokeWidth='2'
+                strokeLinecap='round'
+                strokeLinejoin='round'
+              >
+                <line x1='18' y1='6' x2='6' y2='18'></line>
+                <line x1='6' y1='6' x2='18' y2='18'></line>
+              </svg>
+            </button>
+
+            <h3 className='faustina-title text-3xl mb-2'>Energy Analysis</h3>
+            <p className='text-gray-600 mb-8 font-light'>
+              Choose your preferred payment method
+            </p>
+
+            {/* PayPal Option */}
+            <a
+              href={PAYPAL_ENERGY_ANALYSIS}
+              target='_blank'
+              rel='noopener noreferrer'
+              className='w-full bg-[#0070ba] text-white py-4 rounded-xl font-semibold flex items-center justify-center gap-3 mb-6 hover:bg-[#005ea6] transition-colors'
+            >
+              <Image
+                src={staticLogoPaypal}
+                alt=''
+                width={20}
+                height={20}
+                className='brightness-0 invert'
+              />
+              Pay with PayPal
+            </a>
+
+            <div className='flex items-center w-full mb-6'>
+              <div className='flex-grow border-t border-gray-200'></div>
+              <span className='px-4 text-gray-400 text-sm'>OR</span>
+              <div className='flex-grow border-t border-gray-200'></div>
+            </div>
+
+            {/* Venmo Option with QR */}
+            <div className='w-full flex flex-col items-center bg-blue-50/50 p-6 rounded-xl border border-blue-100'>
+              <Image
+                src='/venmo_qr_energy_analysis.png'
+                alt='Venmo QR Code'
+                width={180}
+                height={180}
+                className='rounded-lg shadow-sm mb-4'
+              />
+              <p className='text-sm text-blue-800 font-medium mb-2'>
+                Scan with Venmo App
+              </p>
+              <a
+                href={VENMO_APP_LINK}
+                className='text-blue-600 font-bold hover:underline'
+              >
+                @{VENMO_HANDLE}
+              </a>
+            </div>
+
+            <p className='mt-6 text-xs text-gray-400 text-center italic'>
+              Once paid, we will contact you via email to schedule your session.
+            </p>
+          </div>
+        </div>
+      )}
     </div>
   )
 }

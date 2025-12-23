@@ -11,14 +11,14 @@ export default function DonationSection() {
         <div className='max-w-4xl mx-auto text-center'>
           {/* Header */}
           <h2 className='faustina-title text-5xl lg:text-6xl font-normal mb-6 text-[#fc4052]'>
-            Support Our Mission
+            Support My Mission
           </h2>
 
           {/* Introductory Text */}
           <p className='text-xl md:text-2xl font-extralight mb-12'>
-            Your generosity helps us continue sharing the healing energy of the
+            Your generosity helps me continue sharing the healing energy of the
             Soulfire Ceremony with the world. Every contribution, big or small,
-            supports our ongoing work and community outreach.
+            supports my ongoing work and community outreach.
           </p>
 
           {/* Donation Options Container */}
@@ -77,8 +77,8 @@ export default function DonationSection() {
 
           {/* Optional: Alternative Contact/Gratitude */}
           <p className='text-lg mt-12 text-gray-700'>
-            We are deeply grateful for your continuous support and belief in our
-            work. Thank you!
+            I am deeply grateful for your contributions and belief in my work.
+            Thank you!
           </p>
         </div>
       </div>

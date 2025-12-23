@@ -18,11 +18,11 @@ export default function ContactPage() {
           />
           <div className='w-full md:w-9/16 flex flex-col items-center text-center gap-12'>
             <h2 className='faustina-title text-4xl lg:text-5xl font-normal'>
-              We&apos;d love to hear from you.
+              I&apos;d love to hear from you.
             </h2>
             <p className='text-xl md:text-2xl lg:text-2xl font-extralight'>
               Whether you have a question, a comment, or just want to connect,
-              feel free to reach out to us through any of the channels below.
+              feel free to reach out to me through any of the channels below.
             </p>
 
             <div className='flex flex-col gap-8 mt-4'>
