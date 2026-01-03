@@ -82,7 +82,6 @@ export default function EnergyAnalysisPage() {
       {/* Main Content Section */}
       <div className='bg-white text-black px-8 py-24 lg:px-32'>
         <div className='max-w-7xl mx-auto flex flex-col gap-16'>
-          {/* ... (What is Energy Analysis and How It Works sections remain the same) ... */}
           <FadeInSection>
             <h2 className='faustina-title text-4xl lg:text-5xl font-normal text-center mb-12'>
               What is an Energy Analysis?
@@ -93,6 +92,47 @@ export default function EnergyAnalysisPage() {
               identify blockages, understand your energetic patterns, and
               realign with your true purpose.
             </p>
+          </FadeInSection>
+
+          {/* How It's Done Section */}
+          <FadeInSection className='flex flex-col md:flex-row items-center md:gap-12 mt-16'>
+            <div className='md:w-1/4'>
+              <Image
+                src='/energy_analysis_howitworks.jpg'
+                alt='Diagram showing energy flow'
+                width={500}
+                height={500}
+                className='w-full h-auto rounded-lg shadow-lg mb-8 md:mb-0'
+              />
+            </div>
+            <div className='md:w-3/4 flex flex-col gap-6 text-center md:text-left'>
+              <h3 className='faustina-title text-3xl lg:text-4xl font-normal'>
+                How It Works
+              </h3>
+              <p className='text-xl md:text-2xl lg:text-2xl font-extralight'>
+                Through a gentle and profound process, we unlock your personal
+                energetic blueprint. This is not about complex rituals, but a
+                simple, guided journey to understand the flow of your inner
+                flame. The analysis will provide you with actionable insights to
+                dissolve energetic knots and restore balance. Energy Analysis is
+                about meeting you where you are. This 60-minute session begins
+                with gentle breathing and relaxation, allowing you to settle
+                into your body and arrive in the present moment. From there,
+                I’ll guide you through a few reflective questions to gain
+                insight into the current state of your physical, emotional and
+                mental body. Throughout the session, I’ll use a variety of
+                energy tools and sound healing techniques to help bring your
+                energy field into balance and harmony.
+              </p>
+              <p className='text-xl md:text-2xl lg:text-2xl font-extralight'>
+                Our approach is rooted in ancient wisdom combined with a modern,
+                intuitive understanding of spiritual energy. The goal is to
+                empower you with the knowledge to create lasting harmony.
+                Together, we’ll uncover where your energy may be out of
+                alignment and explore the next steps toward restoring balance,
+                clarity and flow.
+              </p>
+            </div>
           </FadeInSection>
 
           {/* Pricing and CTA Section */}

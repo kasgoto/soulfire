@@ -62,7 +62,7 @@ export default function Home() {
         />
         <div className='absolute inset-0 flex items-center justify-start z-10 px-8 lg:px-32'>
           <div className='flex items-center w-full'>
-            <h1 className='imperial-title text-[16vw] md:text-[14vw] lg:text-[7vw] text-white text-center  drop-shadow-[0_8px_8px_rgba(0,0,0,1)] md:drop-shadow-[0_12px_14px_rgba(0,0,0,1)] flex-1 lg:pt-[51vh]'>
+            <h1 className='imperial-title text-[16vw] md:text-[14vw] lg:text-[7vw] text-white text-center  drop-shadow-[0_8px_8px_rgba(0,0,0,1)] md:drop-shadow-[0_12px_14px_rgba(0,0,0,1)] flex-1 pt-[40vh] lg:pt-[51vh]'>
               Become What You Are
             </h1>
             {/* <h1 className='imperial-title text-[16vw] lg:text-[7vw] text-white text-right leading-tight drop-shadow-[0_8px_8px_rgba(0,0,0,1)] flex-1 lg:block hidden'>
@@ -121,7 +121,8 @@ export default function Home() {
             What I Offer
           </h2>
           <p className='mb-8 text-2xl md:text-2xl lg:text-2xl xl:text-3xl font-extralight text-center'>
-            Through our gentle and profound practices, we offer you a path home.
+            Through these profound embodiment and spiritual practices, I offer
+            you a path home.
           </p>
         </FadeInSection>
 
