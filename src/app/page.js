@@ -62,7 +62,7 @@ export default function Home() {
         />
         <div className='absolute inset-0 flex items-center justify-start z-10 px-8 lg:px-32'>
           <div className='flex items-center w-full'>
-            <h1 className='imperial-title text-[16vw] md:text-[14vw] lg:text-[7vw] text-white text-center  drop-shadow-[0_8px_8px_rgba(0,0,0,1)] md:drop-shadow-[0_12px_14px_rgba(0,0,0,1)] flex-1 pt-[40vh] lg:pt-[51vh]'>
+            <h1 className='imperial-title text-[16vw]/20 md:text-[14vw] lg:text-[7vw] text-white text-center  drop-shadow-[0_8px_8px_rgba(0,0,0,1)] md:drop-shadow-[0_12px_14px_rgba(0,0,0,1)] flex-1 pt-[42vh] lg:pt-[61vh]'>
               Become What You Are
             </h1>
             {/* <h1 className='imperial-title text-[16vw] lg:text-[7vw] text-white text-right leading-tight drop-shadow-[0_8px_8px_rgba(0,0,0,1)] flex-1 lg:block hidden'>
@@ -117,25 +117,25 @@ export default function Home() {
       {/* What we offer section */}
       <div className='px-8 pt-6 lg:py-16 md:py-24 lg:px-32 bg-white text-black mx-auto flex flex-col'>
         <FadeInSection>
-          <h2 className='faustina-title text-4xl lg:text-5xl text-center mb-10 font-normal'>
+          <h2 className='faustina-title text-4xl lg:text-5xl text-center mb-14 font-normal'>
             What I Offer
           </h2>
-          <p className='mb-8 text-2xl md:text-2xl lg:text-2xl xl:text-3xl font-extralight text-center'>
+          <p className='mb-16 text-2xl md:text-2xl lg:text-2xl xl:text-3xl font-extralight text-center'>
             Through these profound embodiment and spiritual practices, I offer
             you a path home.
           </p>
         </FadeInSection>
 
-        <div className='flex flex-col gap-16 md:gap-24 mt-10 max-w-7xl mx-auto'>
+        <div className='flex flex-col gap-16 md:gap-32 mt-8 max-w-7xl mx-auto'>
           {/* Energy Analysis Card */}
           <FadeInSection>
             <div className='flex flex-col items-center md:flex-row md:items-center md:justify-center md:gap-12 w-full'>
               <Image
-                src='/homepage_energyanalysis.jpg'
+                src='/main_what_i_offer.jpg'
                 alt='energy analysis illustration'
-                width={400}
-                height={200}
-                className='w-full md:w-5/16 h-auto mb-8 md:mb-0 rounded-lg shadow-lg'
+                width={800}
+                height={1067}
+                className='w-full md:w-8/32 h-auto mb-8 md:mb-0 rounded-lg shadow-lg'
                 priority
               />
               <div className='flex flex-col gap-8 items-center md:w-3/8'>
@@ -162,10 +162,10 @@ export default function Home() {
           <FadeInSection>
             <div className='flex flex-col items-center md:flex-row md:items-center md:justify-center md:gap-12 w-full'>
               <Image
-                src='/homepage_kundalini.jpg'
+                src='/main_kundalini.jpg'
                 alt='kundalini illustration'
-                width={400}
-                height={200}
+                width={800}
+                height={1067}
                 className='w-full md:w-4/15 h-auto mb-8 md:mb-0 rounded-lg shadow-lg'
                 priority
               />
@@ -194,11 +194,11 @@ export default function Home() {
           <FadeInSection>
             <div className='flex flex-col items-center md:flex-row md:items-center md:justify-center md:gap-12 w-full'>
               <Image
-                src='/homepage_tantric.jpg'
+                src='/main_tantric.jpg'
                 alt='tantric massage illustration'
-                width={400}
-                height={200}
-                className='w-full md:w-3/8 h-auto mb-8 md:mb-0 rounded-lg shadow-lg'
+                width={800}
+                height={1067}
+                className='w-full md:w-4/15 h-auto mb-8 md:mb-0 rounded-lg shadow-lg'
                 priority
               />
               <div className='flex flex-col gap-8 items-center md:w-3/8'>

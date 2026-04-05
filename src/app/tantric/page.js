@@ -3,7 +3,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { useState, useEffect, useRef } from "react"
-import staticImage from "../../../public/tantric.jpg"
+import staticImage from "../../../public/tantric_alt.jpg"
 import staticLogoPaypal from "../../../public/paypal_logo.svg"
 import { PAYPAL_TANTRIC, VENMO_APP_LINK, VENMO_HANDLE } from "../paymentlinks"
 
@@ -129,7 +129,7 @@ export default function TantricPage() {
           </FadeInSection>
 
           <FadeInSection>
-            <p className='text-xl md:text-xl lg:text-xl xl:text-2xl font-extralight text-left max-w-8xl mx-auto'>
+            <div className='text-xl md:text-xl lg:text-xl xl:text-2xl font-extralight text-left max-w-8xl mx-auto'>
               Tantric sessions are offered as a safe, respectful, and
               intentional space for individuals and couples to explore intimacy,
               self-awareness, and energetic connection on a deeper level. Each
@@ -192,7 +192,7 @@ export default function TantricPage() {
                 connection, harmony, and intimacy—within yourself and, when
                 shared, with one another.
               </p>
-            </p>
+            </div>
           </FadeInSection>
 
           {/* Pricing and CTA Section */}

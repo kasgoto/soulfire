@@ -67,7 +67,7 @@ export default function EnergyAnalysisPage() {
           placeholder='blur'
           fill
           quality={100}
-          style={{ objectFit: "cover", objectPosition: "50% 25%" }}
+          style={{ objectFit: "cover", objectPosition: "50% 57%" }}
           sizes='100vw'
           className='absolute inset-0'
           priority
@@ -98,14 +98,14 @@ export default function EnergyAnalysisPage() {
           <FadeInSection className='flex flex-col md:flex-row items-center md:gap-12 mt-16'>
             <div className='md:w-1/4'>
               <Image
-                src='/energy_analysis_howitworks.jpg'
+                src='/energy_analysis_howitworks_alt.jpg'
                 alt='Diagram showing energy flow'
                 width={500}
                 height={500}
                 className='w-full h-auto rounded-lg shadow-lg mb-8 md:mb-0'
               />
             </div>
-            <div className='md:w-3/4 flex flex-col gap-6 text-center md:text-left'>
+            <div className='md:w-3/4 flex flex-col gap-6 text-left'>
               <h3 className='faustina-title text-3xl lg:text-4xl font-normal'>
                 How It Works
               </h3>
@@ -125,7 +125,7 @@ export default function EnergyAnalysisPage() {
                 energy field into balance and harmony.
               </p>
               <p className='text-xl md:text-2xl lg:text-2xl font-extralight'>
-                Our approach is rooted in ancient wisdom combined with a modern,
+                My approach is rooted in ancient wisdom combined with a modern,
                 intuitive understanding of spiritual energy. The goal is to
                 empower you with the knowledge to create lasting harmony.
                 Together, we’ll uncover where your energy may be out of
