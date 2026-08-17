@@ -177,6 +177,12 @@ export default function AboutPage() {
               >
                 Tantric Meditation
               </Link>
+              <Link
+                href='/sacred-bride'
+                className='bg-black text-xl text-white border border-gray-300 py-2 px-6 rounded-full transition-opacity duration-200 hover:opacity-60 max-w-xs text-center mx-auto md:mx-0'
+              >
+                Sacred Bride Ceremony
+              </Link>
             </div>
           </FadeInSection>
         </div>

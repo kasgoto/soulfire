@@ -122,6 +122,12 @@ export default function Header() {
                 >
                   Tantric
                 </Link>
+                <Link
+                  href='/sacred-bride'
+                  className='block px-4 py-2 text-gray-800 hover:bg-gray-100 hover:text-[#383838] transition-colors duration-200'
+                >
+                  Sacred Bride
+                </Link>
               </div>
             )}
           </div>
@@ -230,6 +236,13 @@ export default function Header() {
               className='text-white hover:text-gray-400 transition-colors duration-200'
             >
               Tantric
+            </Link>
+            <Link
+              href='/sacred-bride'
+              onClick={toggleMobileMenu}
+              className='text-white hover:text-gray-400 transition-colors duration-200'
+            >
+              Sacred Bride Ceremony
             </Link>
           </div>
           <div className='relative group'>
