@@ -76,7 +76,7 @@ export default function TantricPage() {
               A Luxury Wellness Experience for Bachelorette Celebrations.
             </h2>
             <div className='flex flex-col md:flex-row items-center gap-12 max-w-6xl mx-auto'>
-              <div className='md:w-1/4'>
+              <div className='md:w-1/4 w-full'>
                 <Image
                   src='/sacred_bride_about.jpg'
                   alt='Sacred Bride Ceremony'
@@ -196,7 +196,7 @@ export default function TantricPage() {
               schedule.
             </h4>
             <div className='flex flex-col md:flex-row gap-4 md:gap-32 justify-center'>
-              <div className='flex flex-col gap-4 items-center md:mb-16'>
+              <div className='flex flex-col gap-4 items-center mb-6'>
                 <p className='text-4xl md:text-5xl text-gray-800 font-extralight'>
                   60 minutes
                 </p>
@@ -226,13 +226,13 @@ export default function TantricPage() {
           </FadeInSection>
 
           <FadeInSection className='mt-6 text-center flex flex-col items-center gap-2'>
-            <h3 className='text-2xl my-4 font-extralight'>
+            <h3 className='text-xl md:text-2xl my-4 font-extralight'>
               To book, please contact me via email:
             </h3>
             <a
               href='mailto:soulfireceremony@gmail.com'
               aria-label='Email'
-              className='flex items-center gap-2 hover:opacity-70 transition-opacity text-xl'
+              className='flex items-center gap-2 hover:opacity-70 transition-opacity text-lg md:text-xl'
             >
               <svg
                 className='w-8 h-8 fill-current'
